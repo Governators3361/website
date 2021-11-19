@@ -1,7 +1,3 @@
 [build]
-  publish = "pub/"
+  publish = "src/"
   command = "chmod a+x ./preprocessing.sh && ./preprocessing.sh"
-
-[[redirects]]
-  from = "/pub"
-  to = "/"
