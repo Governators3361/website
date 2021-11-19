@@ -4,7 +4,7 @@ GALLERY_DIR="/gallery/"
 
 echo "Starting preprocessing..."
 
-ls
+cd /
 cd ."$SRC_DIR"
 
 # copy external directories to site directory
