@@ -3,5 +3,5 @@
   command = "chmod a+x ./preprocessing.sh && ./preprocessing.sh"
 
 [[redirects]]
-  from = "/src"
+  from = "/pub"
   to = "/"
