@@ -15,6 +15,7 @@
       })();
 
       function openRandomImage() {
+        console.log(images[Math.floor(Math.random() * images.length) + 1]);
         open('./gallery/' + images[Math.floor(Math.random() * images.length) + 1], '_blank').focus();
       }
     </script>
