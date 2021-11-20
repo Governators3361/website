@@ -9,6 +9,6 @@
 man i love fishing
 <br><br>
 
-## How-to's
+## How-to's (not finished yet)
 1. [Uploading photos to the website](#)
 2. [Writing blog posts](#)
