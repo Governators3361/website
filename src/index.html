@@ -9,13 +9,12 @@
 
       (function () {
         var r = new XMLHttpRequest();
-        r.onload = function () { images = r.responseText.split('\n'); };
+        r.onload = function () { images = r.responseText.slice(0, -1).split('\n'); };
         r.open('GET', './gallery/listing.txt');
         r.send();
       })();
 
       function openRandomImage() {
-        console.log(images[Math.floor(Math.random() * images.length) + 1]);
         open('./gallery/' + images[Math.floor(Math.random() * images.length) + 1], '_blank').focus();
       }
     </script>
