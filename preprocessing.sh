@@ -14,8 +14,7 @@ cp -r .."$GALLERY_DIR" ./
 echo "Generating directory listings..."
 cd ."$BLOGS_DIR"
 printf '%s\n' * > "listing.txt"
-cd ../
-cd ."$GALLERY_DIR"
+cd .."$GALLERY_DIR"
 printf '%s\n' * > "listing.txt"
 
 echo "Preprocessing finished!"

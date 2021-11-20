@@ -4,9 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <script>
+      var images;
+
+      (function () {
+        var r = new XMLHttpRequest();
+        r.onload = function () { images = r.responseText.split('\n'); };
+        r.open('GET', './gallery/listing.txt');
+        r.send();
+      })();
+
+      function openRandomImage() {
+        open('./gallery/' + images[Math.floor(Math.random() * images.length) + 1], '_blank').focus();
+      }
+    </script>
     <title>The Governators</title>
   </head>
   <body>
     <h1>this works</h1>
+    <p><b>test pages:</b></p>
+    <ul>
+      <li><a href="javascript:void(0)" onclick="openRandomImage()">random image from gallery</a></li>
+    </ul>
   </body>
 </html>
