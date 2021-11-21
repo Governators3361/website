@@ -17,7 +17,7 @@ body {
 
 @media screen and (orientation: portrait) {
   body {
-    font-size: calc(var(--page-font-family) - 2px);
+    font-size: calc(1rem - 4px);
   }
 }
 
