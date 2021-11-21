@@ -6,12 +6,6 @@ html {
   color: var(--page-text-color);
 }
 
-@media screen and (orientation: portrait) {
-  html {
-    font-size: calc(var(--page-font-family) - 2px);
-  }
-}
-
 body {
   margin: 0 auto;
   display: flex;
@@ -19,6 +13,12 @@ body {
   align-items: center;
   max-width: var(--page-max-width);
   min-height: 100%;
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    font-size: calc(var(--page-font-family) - 2px);
+  }
 }
 
 body > * {
