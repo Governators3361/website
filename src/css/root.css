@@ -1,0 +1,68 @@
+:root {
+  --page-font-family: 'Trebuchet MS';
+  --page-font-size: 24px;
+  --page-max-width: 1200px;
+
+  --page-background: rgb(var(--color-0));
+  --page-text-color: rgb(var(--color-1));
+}
+
+hr {
+  border-bottom-width: 0;
+  border-style: solid;
+  width: 100%;
+  opacity: 0.4;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: var(--page-background);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--page-max-width);
+  min-height: 100%;
+  font-family: var(--page-font-family);
+  font-size: var(--page-font-size);
+  color: var(--page-text-color);
+}
+
+body > * {
+  margin: 1em;
+}
+
+#theme-toggle {
+  background: var(--page-background);
+  border-radius: 1em;
+  padding: 0.4em 0.6em;
+  margin: 0;
+  box-shadow: 0 0 0.1em var(--page-text-color);
+  display: inline-block;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  opacity: 0.5;
+  transition: opacity 0.2s, transform 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#theme-toggle:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+#theme-toggle[data-theme-selected='light']::after {
+  content: ' 🌞';
+}
+
+#theme-toggle[data-theme-selected='dark']::after {
+  content: ' 🌚';
+}

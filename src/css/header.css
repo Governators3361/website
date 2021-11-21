@@ -1,0 +1,9 @@
+header {
+  width: 70%;
+  text-align: center;
+}
+
+header > img {
+  box-sizing: border-box;
+  width: 60%;
+}
