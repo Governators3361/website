@@ -1,0 +1,19 @@
+/* CSS variables */
+
+:root {
+  --page-font-family: 'Trebuchet MS';
+  --page-font-size: 24px;
+  --page-max-width: 1200px;
+
+  --page-background: rgb(var(--color-0));
+  --page-text-color: rgb(var(--color-1));
+}
+
+
+/* other stuff */
+
+:root {
+  /* horizontal rule */
+  --hr: linear-gradient(to right, transparent, var(--page-text-color), transparent) left no-repeat;
+  --hr-size: 100% 1px;
+}

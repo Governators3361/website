@@ -31,7 +31,7 @@
   });
 
   window.addEventListener('load', function () {
-    d.body.appendChild(themeToggleButton);
+    d.documentElement.appendChild(themeToggleButton);
   });
 
   setTheme(CONFIG.themeInitial);

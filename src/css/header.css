@@ -1,9 +1,11 @@
 header {
-  width: 70%;
+  background: var(--hr);
+  background-position: bottom;
+  background-size: var(--hr-size);
   text-align: center;
 }
 
 header > img {
   box-sizing: border-box;
-  width: 60%;
+  width: 50%;
 }
