@@ -5,6 +5,7 @@ header {
   margin-top: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
@@ -26,6 +27,10 @@ header {
 
 .header-logo-container > img {
   height: 3em;
+}
+
+header > nav {
+  margin: 1em 0;
 }
 
 header > nav > a {
