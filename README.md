@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Governators3361/website/blob/main/src/assets/images/logo.png">
+  <img width="200" src="https://github.com/Governators3361/website/blob/main/src/assets/images/logo.png">
   <h1>The Governators</h1>
   <p>Official Website</p>
 </div>
