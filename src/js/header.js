@@ -6,10 +6,10 @@
   var currentPage = location.pathname.split('.html')[0];
   var header = d.createElement('header');
   header.innerHTML =
-    '<div class="header-logo-container">' +
+    '<a href="/" class="header-logo-container">' +
     '<img class="logo" src="/assets/images/logo.svg">' +
     '<span>The Governators</span>' +
-    '</div>' +
+    '</a>' +
     '<nav>' +
     '<a ' + (currentPage === '/' || currentPage === '/index' ? 'data-page-current' : '') + ' href="/">Home</a>' +
     '<a ' + (currentPage === '/blog' ? 'data-page-current' : '') + ' href="/blog.html">Blog</a>' +
