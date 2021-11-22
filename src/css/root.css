@@ -11,8 +11,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: var(--page-max-width);
   min-height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 @media screen and (orientation: portrait) {
@@ -22,7 +23,6 @@ body {
 }
 
 body > * {
-  margin: 1em 0;
   box-sizing: border-box;
   width: 100%;
 }

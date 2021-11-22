@@ -1,4 +1,4 @@
-#theme-toggle {
+#theme-button {
   background: var(--page-background);
   border-radius: 1em;
   padding: 0.4em 0.6em;
@@ -20,20 +20,20 @@
 }
 
 @media screen and (orientation: portrait) {
-  #theme-toggle {
+  #theme-button {
     bottom: 3em;
   }
 }
 
-#theme-toggle:hover {
+#theme-button:hover {
   opacity: 1;
   transform: scale(1.2);
 }
 
-#theme-toggle[data-theme-selected='light']::after {
+#theme-button[data-theme-selected='light']::after {
   content: ' 🌞';
 }
 
-#theme-toggle[data-theme-selected='dark']::after {
+#theme-button[data-theme-selected='dark']::after {
   content: ' 🌚';
 }

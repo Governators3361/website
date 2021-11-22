@@ -1,6 +1,7 @@
 main {
   padding: 0 1em;
   flex: 1;
+  max-width: var(--page-main-max-width);
 }
 
 main > h1 {

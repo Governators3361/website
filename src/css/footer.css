@@ -2,7 +2,7 @@ footer {
   background: var(--hr);
   background-position: top;
   background-size: var(--hr-size);
-  padding-top: 1em;
+  padding: 1em;
   box-sizing: border-box;
   list-style: none;
   text-align: center;

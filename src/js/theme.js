@@ -5,9 +5,9 @@
 
   var themes = CONFIG.themes;
   var themeNameSelected;
-  var themeToggleButton = d.createElement('div');
-  themeToggleButton.innerText = 'Theme:';
-  themeToggleButton.id = 'theme-toggle'
+  var themeButton = d.createElement('div');
+  themeButton.innerText = 'Theme:';
+  themeButton.id = 'theme-button'
 
   var setTheme = function (themeName) {
     var theme = themes.filter(function (cur) { return cur.name === themeName; })[0];
@@ -16,12 +16,12 @@
     for (var prop in themeProperties) {
       d.documentElement.style.setProperty(prop, themeProperties[prop]);
     }
-    themeToggleButton.setAttribute('data-theme-selected', themeName);
+    themeButton.setAttribute('data-theme-selected', themeName);
     localStorage.setItem('lastTheme', themeName);
     themeNameSelected = themeName;
   };
 
-  themeToggleButton.addEventListener('click', function (e) { // set next theme in theme list
+  themeButton.addEventListener('click', function (e) { // set next theme in theme list
     for (var i = 0; i < themes.length; i++) {
       if (themes[i].name === themeNameSelected) {
         setTheme(i < themes.length - 1 ? themes[i + 1].name : themes[0].name);
@@ -31,7 +31,8 @@
   });
 
   window.addEventListener('load', function () {
-    d.documentElement.appendChild(themeToggleButton);
+    d.documentElement.appendChild(themeButton);
+    d.body.style.opacity = 1;
   });
 
   setTheme(CONFIG.themeInitial);

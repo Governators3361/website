@@ -2,10 +2,39 @@ header {
   background: var(--hr);
   background-position: bottom;
   background-size: var(--hr-size);
-  text-align: center;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: left;
 }
 
-header > img {
-  box-sizing: border-box;
-  width: 50%;
+.header-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.header-logo-container > * {
+  margin: 0.4em;
+}
+
+.header-logo-container > img {
+  height: 3em;
+}
+
+header > nav > a {
+  padding: 0 1em;
+}
+
+header > nav > a:not(:last-child) {
+  border-right: 1px solid var(--page-text-color);
+}
+
+header > nav > a[data-page-current] {
+  text-decoration-thickness: 6px;
 }
