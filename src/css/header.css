@@ -35,6 +35,7 @@ header > nav {
 
 header > nav > a {
   padding: 0 1em;
+  text-decoration: none;
 }
 
 header > nav > a:not(:last-child) {
@@ -42,5 +43,5 @@ header > nav > a:not(:last-child) {
 }
 
 header > nav > a[data-page-current] {
-  text-decoration-thickness: 6px;
+  text-decoration: underline
 }
