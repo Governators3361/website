@@ -2,15 +2,19 @@ header {
   background: var(--hr);
   background-position: bottom;
   background-size: var(--hr-size);
+  padding: 0.6em;
   margin-top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: var(--justify);
+  font-size: 1.1rem;
   font-weight: bold;
   font-variant: small-caps;
-  text-align: left;
+  text-align: var(--align);
+  --align: center;
+  --justify: space-between;
 }
 
 .header-logo-container {
@@ -22,7 +26,7 @@ header {
 }
 
 .header-logo-container > * {
-  margin: 0.4em;
+  margin: 0 0.4em;
 }
 
 .header-logo-container > img {
@@ -30,7 +34,7 @@ header {
 }
 
 header > nav {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 header > nav > a {

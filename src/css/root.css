@@ -21,6 +21,10 @@ body {
   body {
     font-size: calc(1rem - 4px);
   }
+  header {
+    --align: center !important;
+    --justify: center !important;
+  }
 }
 
 body > * {
