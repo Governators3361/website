@@ -30,6 +30,7 @@ header {
 
 .header-logo-container > img {
   height: 3em;
+  filter: drop-shadow(1px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(1px -1px 0 #fff) drop-shadow(-1px -1px 0 #fff);
 }
 
 header > nav {
