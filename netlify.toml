@@ -2,5 +2,8 @@
   publish = "src/"
   command = "chmod a+x ./preprocessing.sh && ./preprocessing.sh"
 
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
 [plugins.inputs.minifierOptions]
   collapseWhitespace = true
