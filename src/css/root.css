@@ -4,6 +4,7 @@ html {
   font-family: var(--page-font-family);
   font-size: var(--page-font-size);
   color: var(--page-text-color);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -30,8 +31,4 @@ body {
 body > * {
   box-sizing: border-box;
   width: 100%;
-}
-
-.unhide {
-  opacity: 1;
 }

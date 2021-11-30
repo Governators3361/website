@@ -27,3 +27,7 @@
 a {
   color: var(--page-text-color);
 }
+
+.unhide {
+  opacity: 1;
+}
