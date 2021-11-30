@@ -1,6 +1,6 @@
 <div align="center">
   <img width="300" src="https://github.com/Governators3361/website/blob/main/src/assets/images/logo.svg">
-  <h1>The Governators</h1>
+  <h1>Tʜᴇ Gᴏᴠᴇʀɴᴀᴛᴏʀs</h1>
   <p>Official Website</p>
 </div>
 
