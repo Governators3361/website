@@ -9,7 +9,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: var(--justify);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: bold;
   font-variant: small-caps;
   text-align: var(--align);
