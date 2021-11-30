@@ -31,3 +31,7 @@ body > * {
   box-sizing: border-box;
   width: 100%;
 }
+
+.unhide {
+  opacity: 1;
+}

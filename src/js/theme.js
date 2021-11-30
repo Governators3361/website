@@ -32,7 +32,11 @@
 
   window.addEventListener('load', function () {
     d.documentElement.appendChild(themeButton);
-    d.body.style.opacity = 1;
+    d.body.classList.toggle('unhide');
+  });
+
+  window.addEventListener('beforeunload', function () {
+    d.body.classList.toggle('unhide');
   });
 
   setTheme(CONFIG.themeInitial);
