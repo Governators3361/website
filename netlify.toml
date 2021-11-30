@@ -2,11 +2,6 @@
   publish = "src/"
   command = "chmod a+x ./preprocessing.sh && ./preprocessing.sh"
 
-[[redirects]]
-  from = "/*.html"
-  to = "/:splat"
-  status = 301!
-
 [[plugins]]
   package = "netlify-plugin-minify-html"
 
