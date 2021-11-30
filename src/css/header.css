@@ -3,7 +3,6 @@ header {
   background-position: bottom;
   background-size: var(--hr-size);
   padding: 0.6em;
-  margin-top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
