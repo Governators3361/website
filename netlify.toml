@@ -1,3 +1,6 @@
 [build]
   publish = "src/"
   command = "chmod a+x ./preprocessing.sh && ./preprocessing.sh"
+
+[plugins.inputs.minifierOptions]
+  collapseWhitespace = true
