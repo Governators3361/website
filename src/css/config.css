@@ -1,12 +1,20 @@
 /* CSS variables */
 
 :root {
-  --page-font-family: 'Trebuchet MS';
+  --page-font-family: 'Nunito Sans Light';
   --page-font-size: 24px;
   --page-main-max-width: 1200px;
 
   --page-background: rgb(var(--color-0));
   --page-text-color: rgb(var(--color-1));
+}
+
+
+/* font */
+
+@font-face {
+  font-family: 'Nunito Sans Light';
+  src: url('/assets/fonts/nunito-sans-latin-300.woff2');
 }
 
 
