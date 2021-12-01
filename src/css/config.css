@@ -1,7 +1,7 @@
 /* CSS variables */
 
 :root {
-  --page-font-family: 'Nunito Sans Light';
+  --page-font-family: 'Nunito Sans Regular';
   --page-font-size: 24px;
   --page-main-max-width: 1200px;
 
@@ -13,8 +13,8 @@
 /* font */
 
 @font-face {
-  font-family: 'Nunito Sans Light';
-  src: url('/assets/fonts/nunito-sans-latin-300.woff2');
+  font-family: 'Nunito Sans Regular';
+  src: url('/assets/fonts/nunito-sans-latin-regular.woff2');
 }
 
 
