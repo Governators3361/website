@@ -1,7 +1,7 @@
 #theme-button {
   background: var(--page-background);
   border-radius: 1em;
-  padding: 0.4em 0.6em;
+  padding: 0.3em 0.6em;
   margin: 0;
   box-shadow: 0 0 0.1em var(--page-text-color);
   display: inline-block;
@@ -9,7 +9,6 @@
   bottom: 1em;
   right: 1em;
   font-size: 0.8em;
-  line-height: 1;
   opacity: 0.5;
   transition: opacity 0.2s, transform 0.2s;
   -webkit-touch-callout: none;
