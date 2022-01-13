@@ -32,3 +32,27 @@ body > * {
   box-sizing: border-box;
   width: 100%;
 }
+
+/* other stuff */
+
+a {
+  color: var(--page-text-color);
+}
+
+.unhide {
+  opacity: 1;
+  filter: none;
+}
+
+/*.panel {
+  background: rgb(
+    calc(max(var(--a), -1*var(--a));),
+    calc(var(--color-0-g) * 0.8),
+    calc(var(--color-0-b) * 0.8),
+  );
+  border-radius: 1em;
+}
+
+.panel-inner {
+  background: 
+}*/

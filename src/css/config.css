@@ -5,8 +5,8 @@
   --page-font-size: 24px;
   --page-main-max-width: 1200px;
 
-  --page-background: rgb(var(--color-0));
-  --page-text-color: rgb(var(--color-1));
+  --page-background: rgb(var(--color-0-r), var(--color-0-g), var(--color-0-b));
+  --page-text-color: rgb(var(--color-1-r), var(--color-1-g), var(--color-1-b));
 }
 
 
@@ -30,13 +30,4 @@
   --vr: linear-gradient(to bottom, transparent, var(--page-text-color), transparent) top no-repeat;
   --vr-size: 1px 100%;
   
-}
-
-a {
-  color: var(--page-text-color);
-}
-
-.unhide {
-  opacity: 1;
-  filter: none;
 }
