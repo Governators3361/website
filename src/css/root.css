@@ -44,15 +44,11 @@ a {
   filter: none;
 }
 
-/*.panel {
-  background: rgb(
-    calc(max(var(--a), -1*var(--a));),
-    calc(var(--color-0-g) * 0.8),
-    calc(var(--color-0-b) * 0.8),
-  );
+.panel {
+  background: var(--color-2);
   border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0.1em 0.1em 0.3em #000;
+  opacity: 0.95;
 }
-
-.panel-inner {
-  background: 
-}*/

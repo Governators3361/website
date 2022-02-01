@@ -1,12 +1,16 @@
 /* CSS variables */
 
 :root {
+  --color-0: rgb(var(--color-0-r), var(--color-0-g), var(--color-0-b));
+  --color-1: rgb(var(--color-1-r), var(--color-1-g), var(--color-1-b));
+  --color-2: rgb(var(--color-2-r), var(--color-2-g), var(--color-2-b));
+
   --page-font-family: 'Nunito Sans Regular';
   --page-font-size: 24px;
   --page-main-max-width: 1200px;
 
-  --page-background: rgb(var(--color-0-r), var(--color-0-g), var(--color-0-b));
-  --page-text-color: rgb(var(--color-1-r), var(--color-1-g), var(--color-1-b));
+  --page-background: var(--color-0);
+  --page-text-color: var(--color-1);
 }
 
 
@@ -29,5 +33,5 @@
   /* vertical rule */
   --vr: linear-gradient(to bottom, transparent, var(--page-text-color), transparent) top no-repeat;
   --vr-size: 1px 100%;
-  
+
 }

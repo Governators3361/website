@@ -1,5 +1,18 @@
-#gallery {
-  position: relative;
-  width: 500px;
-  height: 500px;
+.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.gallery > .panel {
+  width: 4em;
+  text-align: center;
+  transition: transform 0.1s;
+}
+
+.gallery > .panel:hover {
+  transform: scale(1.2);
 }
