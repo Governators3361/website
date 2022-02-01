@@ -8,7 +8,7 @@
   var r = new XMLHttpRequest();
 
   var load = function () {
-    listing = r.responseText.replace(/\r/gm, '').split('\n').map(function (cur) { return { name: cur.split('/').pop().split('.')[0], src: cur }; });
+    listing = r.responseText.replace(/\r/gm, '').replace(/\n+$/, "").split('\n').map(function (cur) { return { name: cur.split('/').pop().split('.')[0], src: cur }; });
 
     var containers = Array.prototype.slice.call(d.getElementsByClassName('gallery'));
     containers.forEach(setupContainer);
