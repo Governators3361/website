@@ -3,6 +3,7 @@
 (function (d) {
   'use strict';
 
+  var galleryDir = '/gallery/';
   var listing;
   var r = new XMLHttpRequest();
 
@@ -17,7 +18,7 @@
     listing.forEach(function (curImage) {
       var card = document.createElement('div');
       card.classList.add('panel');
-      card.innerHTML = `<img src="${curImage.src}"></img><div>${curImage.name}</div>`;
+      card.innerHTML = `<img src="${galleryDir + curImage.src}"></img><div>${curImage.name}</div>`;
       container.appendChild(card);
     });
   };
