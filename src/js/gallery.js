@@ -18,9 +18,22 @@
     listing.forEach(function (curImage) {
       var card = document.createElement('div');
       card.classList.add('panel');
-      card.innerHTML = `<img src="${galleryDir + curImage.src}"></img><div>${curImage.name}</div>`;
+      card.onclick = enlargeImage;
+      card.innerHTML = `<img src="${galleryDir + curImage.src}"></img><div>${curImage.name}ssssssssssssssssssssssssss</div>`;
       container.appendChild(card);
     });
+  };
+
+  var enlargeImage = function () {
+    var attribute = 'data-enlarge';
+    if (this.hasAttribute(attribute)) {
+      this.removeAttribute(attribute);
+    } else {
+      Array.prototype.slice.call(document.querySelectorAll(`[${attribute}]`)).forEach(function (cur) {
+        cur.removeAttribute(attribute);
+      });
+      this.setAttribute(attribute, true);
+    }
   };
 
   r.open('GET', '/gallery/listing.txt');
