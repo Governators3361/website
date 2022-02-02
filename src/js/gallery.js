@@ -19,7 +19,7 @@
       var card = document.createElement('div');
       card.classList.add('panel');
       card.onclick = enlargeImage;
-      card.innerHTML = `<img src="${galleryDir + curImage.src}"></img><div>${curImage.name}ssssssssssssssssssssssssss</div>`;
+      card.innerHTML = `<img src="${galleryDir + curImage.src}"></img><div>${curImage.name}</div>`;
       container.appendChild(card);
     });
   };
