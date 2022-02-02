@@ -50,9 +50,9 @@
     {
       name: 'light',
       properties: {
-        '--color-0-r': '255',
-        '--color-0-g': '255',
-        '--color-0-b': '255',
+        '--color-0-r': '235',
+        '--color-0-g': '235',
+        '--color-0-b': '235',
         '--color-1-r': '0',
         '--color-1-g': '0',
         '--color-1-b': '0',
