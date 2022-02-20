@@ -19,7 +19,7 @@
       var card = document.createElement('div');
       card.classList.add('panel');
       card.onclick = enlargeImage;
-      card.innerHTML = `<div class="gallery-image" style="background-image: url('http://governators3361.netlify.app${galleryDir + curImage.src}');"></div><div class="gallery-image-name">${curImage.name}</div>`;
+      card.innerHTML = `<div class="gallery-image" style="background-image: url('${galleryDir + curImage.src}');"></div><div class="gallery-image-name">${curImage.name}</div>`;
       container.appendChild(card);
     });
   };
